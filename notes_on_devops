@@ -1,0 +1,118 @@
+SDLC
+
+  - Requirement Gathering  (understanding what the client needs)
+
+  - Feasibility Study  (realizing whether the requirement can be met at current IT situation)
+
+  - Design  (documenting the module based structure of the application)
+
+  - Coding  (write codes for actually developing the designed modules)
+
+  - Testing (doing analysis of the developed modules to find out if it complies to the actual design)
+
+  - Deployment (putting the prepared module on the production servers)
+
+  - Maintainance (keeping track of performance, checking for any potential issues and resolving them)
+
+
+Google Pay
+
+  - UPI based payment through QR code scanning, sending money through phone numbers registered on GPay
+
+  - yes
+
+  - User registration module, QR code scanner module, Money transfer module
+
+  - developing the modules and putting them together
+
+  - QA-ing the application by checking each of the module functionality
+
+  - Movement to Google Playstore and on the Google Servers
+
+  - Bug fixes (playstore review/google threads)
+
+
+
+
+Waterfall model of Software Development:   (Time constraint, Effort constraint)
+
+  - Entire Requirement
+
+    - Entire Feasibility
+
+      - Entire Design
+
+	- Entire Coding
+
+	  - Entire Testing
+
+	    - Complete Deployment
+
+	      - Maintainance
+
+
+
+
+Agile model of Software Development:
+
+  Req -> Feasibility -> Design -> Coding -> Testing -> Deployment
+
+  Maintainance
+
+
+
+
+Development in Operations (DevOps)
+
+
+  Design -> Coding -> Testing ))==>>  DEV
+
+  (Network, Server, Deployment) Mgmt ==>> OPS
+
+
+
+
+DevOps flow:
+
+  1. Developers upload their in a repository
+  2. Testers write test script, which is run on the code that has been uploaded
+  3. If everything goes well, have a check on the environment in production and see if it matches to the expectation
+  4. If yes, deploy that on production; if no, prepare the env, then go for deployment
+  5. Monitor the stuffs (Application/Server)
+
+
+DevOps flow (jargons):
+
+  1. Developers PUSH their code in GIT / GITHUB
+
+  2. JENKINS checks the GIT STATUS periodically (~1 min) and PULLs the newly pushed code
+
+  3. JENKINS BUILDs the code (compilation + packaging) using MAVEN
+  
+  4. SELENIUM test scripts are configured on JENKINS and MAVEN takes those scripts and runs a test on the compiled code
+
+  5. JENKINS fires a deployment on DOCKER (single server deployment) / SWARM (clusterised deployment) / KUBERNETES (clusterised deployment)
+
+  6. NAGIOS is used for monitoring the server/application
+
+  7. Any maintainance job to be performed using TERRAFORM / ANSIBLE
+
+
+
+  2 - 4  =>  Continuous Integration   (CI)
+  3	 =>  Continuous Building
+  4	 =>  Continuous Testing
+  5	 =>  Continuous Deployment    (CD)
+  6	 =>  Continuous Monitoring
+  7	 =>  Configuration Management (CM)
+
+
+
+
+
+
+
+
+
+
+
